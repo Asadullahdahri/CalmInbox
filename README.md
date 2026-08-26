@@ -92,7 +92,7 @@ Deploying a free, 10-line Cloudflare Worker acts as a lightweight reverse proxy 
 2. **Create a Worker:**
    - On the left sidebar menu, navigate to **Compute (Workers & Pages)** -> **Overview**.
    - Click the **Create application** (or **Create Worker**) button.
-   - Give your worker a name (for example, `discord-proxy` or `inboxintel-proxy`).
+   - Give your worker a name (for example, `discord-proxy` or `calminbox-proxy`).
    - Click **Deploy**.
 3. **Paste the Proxy Code:**
    - Click **Edit code** on your newly deployed worker.
