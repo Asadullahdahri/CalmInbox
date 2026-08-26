@@ -1,5 +1,5 @@
 /**
- * InboxIntel - Multi-Platform Notification Dispatcher
+ * CalmInbox - Multi-Platform Notification Dispatcher
  * Handles formatting and delivery for Discord, Google Chat, Telegram, and WhatsApp.
  */
 
@@ -32,7 +32,7 @@ function sendDiscordNotification(webhookUrl, email, analysis) {
   const truncatedTitle = rawTitle.length > 250 ? rawTitle.substring(0, 247) + '...' : rawTitle;
 
   const payload = {
-    username: "InboxIntel Bot",
+    username: "CalmInbox Bot",
     embeds: [{
       title: truncatedTitle,
       url: gmailUrl,
@@ -43,7 +43,7 @@ function sendDiscordNotification(webhookUrl, email, analysis) {
         { name: "Summary", value: (analysis.summary || 'No summary.').substring(0, 1000), inline: false },
         { name: "Action Needed", value: (analysis.action_required || 'None').substring(0, 1000), inline: false }
       ],
-      footer: { text: "InboxIntel Triage Agent" }
+      footer: { text: "CalmInbox Triage Agent" }
     }]
   };
 
@@ -155,7 +155,7 @@ function testNotificationProvider() {
 
   const dummyEmail = {
     id: "test12345",
-    from: "Notification Test <bot@inboxintel.internal>",
+    from: "Notification Test <bot@calminbox.internal>",
     subject: "System Connectivity Test",
     date: new Date().toISOString()
   };

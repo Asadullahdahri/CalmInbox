@@ -1,4 +1,4 @@
-# 📬 InboxIntel: Serverless Multimodal AI Email Triage Agent
+# 📬 CalmInbox: Serverless Multimodal AI Email Triage Agent
 
 > An automated, zero-server email assistant powered by Google Gemini and Google Apps Script. It parses incoming unread emails—including **attached image posters (JPEG/PNG) and PDF flyers**—filters out noise, and delivers high-priority alerts with actionable summaries to your chosen platform: **Discord**, **Google Chat**, **Telegram**, or **WhatsApp**.
 
@@ -43,7 +43,7 @@ Choose **one** preferred notification platform. You only need credentials for yo
 ### Step 2: Create Your Google Apps Script Project
 1. Open https://script.google.com/ in your browser.
 2. Click **+ New project** on the top left.
-3. Rename the project to **InboxIntel**.
+3. Rename the project to **CalmInbox** or whatever you like.
 
 ---
 
@@ -123,7 +123,7 @@ Deploying a free, 10-line Cloudflare Worker acts as a lightweight reverse proxy 
 
 ### Option B: Google Chat (Google Workspace)
 1. Open your Space in Google Chat -> Click Space Name at the top -> **Apps & integrations** -> **Webhooks**.
-2. Click **Add webhook**, give it a name (e.g., `InboxIntel`), and copy the URL.
+2. Click **Add webhook**, give it a name (e.g., `CalmInbox`), and copy the URL.
 3. In Script Properties:
    - `NOTIFICATION_PROVIDER`: `GCHAT`
    - `TARGET_DESTINATION`: Your copied Webhook URL

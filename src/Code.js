@@ -1,11 +1,11 @@
 /**
- * InboxIntel - Core Triage Engine (Multimodal)
+ * CalmInbox - Core Triage Engine (Multimodal)
  * Automated email triage powered by Google Gemini & Google Apps Script.
  */
 
 const CONFIG = {
   SEARCH_QUERY: 'is:unread -label:AI-Processed',
-  PROCESSED_LABEL: 'AI-Processed',
+  PROCESSED_LABEL: 'CalmInbox-Processed',
   MAX_THREADS_PER_RUN: 4,
   DELAY_BETWEEN_EMAILS_MS: 7000,
   MARK_AS_READ: true

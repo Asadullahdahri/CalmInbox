@@ -1,5 +1,5 @@
 /**
- * InboxIntel - Prompt Configuration & Triage Rules
+ * CalmInbox - Prompt Configuration & Triage Rules
  * Edit this file to customize how Gemini classifies your emails.
  */
 
